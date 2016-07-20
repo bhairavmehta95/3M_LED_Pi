@@ -9,7 +9,7 @@ import bluetooth
 
 # Changes directory to pi-blaster program, and initializes it
 def run_piblaster():
-	path = "/home/pi/pi-blaster"
+	path = "/home/pi/3M_LED_Pi/pi-blaster"
 	os.chdir( path )
 	os.system("sudo ./pi-blaster")
 
