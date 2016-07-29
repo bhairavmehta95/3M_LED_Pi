@@ -81,6 +81,7 @@ def main():
 		if (bt_is_present == False):
 			blue()
 			bluetooth_status = 'Missing'
+			current_status = 'Out'
 		# finds the bluetooth device specified
 		else:
 			bluetooth_status = 'Present'
