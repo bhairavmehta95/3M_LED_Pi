@@ -5,9 +5,9 @@ import serial
 def send_text():
 	client = TwilioRestClient('AC77bd11f11e791e4556c18124e4754f84','47f4da483a93fd9ddc6fa84092766340')
 	 
-	#client.messages.create(from_='+17326390755',
-	#					   to='+15865302015',
-	#					   body='Hey RJ, you are getting a message!')
+	client.messages.create(from_='+17326390755',
+						   to='+15865302015',
+						   body='Hey RJ, you are getting a message!')
 						   
 	client.messages.create(from_='+17326390755',
 						   to='+17326874076',
