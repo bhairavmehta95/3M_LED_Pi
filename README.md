@@ -26,12 +26,11 @@ After configuring user variables, that is what the device will look for in the d
 
 The program should run automatically on startup (assuming install.sh ran with no problems), but after installation, if further work is required, run:
 
-'''
+```
 python
 
 python raspi_code.py
-
-'''
+```
 
 
 ## Circuit
