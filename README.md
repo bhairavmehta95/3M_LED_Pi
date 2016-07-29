@@ -19,6 +19,7 @@ Code to run on Raspberry Pi that works with 3M_LEDIndicator
 
 * Run install.sh
 * Configure user variables (i.e what Username to look for in DB -- See code for more details)
+  * Inside of sems_api.py, put your A-Number inside of USER = {{ 'here' }} 
 
 After configuring user variables, that is what the device will look for in the database. Be sure to use your 3M A-number in all capitals. An example is present in the code.
 

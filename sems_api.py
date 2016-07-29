@@ -6,6 +6,13 @@ import json
 # Base URL as asssigned by SEMS
 BASE_URL = "https://semsiot.3m.com/"
 
+
+## TO DO: CONFIGURE USER HERE
+
+# user = {{ Put your A-Number Here }}
+
+USER = 'A6D45ZZ'
+
 def register_connect_device():
 	headers = { 'Content-Type' : 'application/json' }
 	
@@ -42,7 +49,8 @@ def send_bluetooth(bluetooth_status, headers):
 		"applicationId": "EBE05BA5-74A7-4152-9BF4-1EE5A9A64CDC",
 		"apiKey": "gcT1vVuu=gwwspFsjkwg2hh2zFPDmmlWJanTSDq7pktnT",
 		"bluetooth_status" : bluetooth_status,
-		"deviceDataTypeCode" : "HEARTBEAT"
+		"deviceDataTypeCode" : "HEARTBEAT",
+                "user" : USER,
 	}
 	
 	# configures a URL for the data, posts same thing
@@ -69,8 +77,9 @@ def get_status_text(headers):
 	
 	for entry in response_json['Data']:
 		try:
-			if entry['status'] != '':
-				status = entry['status']
+                        if entry['user'] == USER:
+                                if entry['status'] != '':
+                                        status = entry['status']
 		except:
 			pass	
 	
