@@ -17,20 +17,34 @@ Code to run on Raspberry Pi that works with 3M_LEDIndicator
 
 ## Steps to Install - Software
 
+* Open up terminal, and type:
+``` git clone https://github.com/bhairavmehta95/3M_LED_Pi ```
+* When prompted, login with a user who is permitted to clone that repository
+* In the same terminal (when the clone is finished), type:
+``` cd 3M_LED_Pi ```
+* Configure the _raspi_code.py_ file with the correct device-id and Bluetooth name of your phone
 * Run install.sh
-* Configure user variables (i.e what Username to look for in DB -- See code for more details)
-  * Inside of sems_api.py, put your A-Number inside of USER = {{ 'here' }} 
+* Connect to the internet
+* Run (if not already running)
+``` python raspi_code.py```
 
-After configuring user variables, that is what the device will look for in the database. Be sure to use your 3M A-number in all capitals. An example is present in the code.
+After configuring device variables, that is what the device will look for in the database. 
+
+**Note**: There are still some things that need to be fixed per user:
+
+* Twillio needs to be configured with that user's phone number
+* If the user has an iOS device, BT is unlikely to be reliable.
+
 
 ## To Run
 
-The program should run automatically on startup (assuming install.sh ran with no problems), but after installation, if further work is required, run:
+The program should run automatically (assuming install.sh ran with no problems), but after installation, if further work is required, run:
 
 ```
 python raspi_code.py
 ```
 
+You will also need to run this command if at any time the Raspberry Pi turns off, as you will need to reconnect to 3MGuest and start the script again.
 
 ## Circuit
 
