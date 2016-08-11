@@ -9,5 +9,4 @@ cd pi-blaster
 make
 cd ..
 cd 
-cd 3M_LED_Pi
 python raspi_code.py
