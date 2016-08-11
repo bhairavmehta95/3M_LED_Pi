@@ -17,6 +17,8 @@ Code to run on Raspberry Pi that works with 3M_LEDIndicator
 
 ## Steps to Install - Software
 
+[Check out the wiki page on setup here] (https://github.com/bhairavmehta95/3M_LED_Pi/wiki/Step-by-Step-Set-Up).
+
 * Open up terminal, and type:
 ``` git clone https://github.com/bhairavmehta95/3M_LED_Pi ```
 * When prompted, login with a user who is permitted to clone that repository
