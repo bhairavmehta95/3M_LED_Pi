@@ -1,6 +1,7 @@
 # 3M_LED_Pi
 Code to run on Raspberry Pi that works with 3M_LEDIndicator
 
+**Note: This IoT-enabled device works best if after setup, the _device is constantly powered on_**.
 
 ## Things You Will Need:
 
@@ -80,6 +81,9 @@ Power up your device and you will have a working LED Indicator!
 
 * One color is always on
   * Check connections, particularly the one to ground
+  
+* Pi turned off, and now it doesn't work
+  * You have to restart the code on the Raspberry Pi. Please contact SEMS.
 
 
   
